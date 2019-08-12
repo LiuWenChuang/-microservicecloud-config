@@ -1,17 +1,29 @@
 spring:
   profiles:
-    active:
+    active: 
     - dev
 ---
+server: 
+  port: 8201
 spring:
-  profiles: dev     #开发环境
-  port: 8082
-  # application:
-  #   name: microservicecloud-config-atguigu-dev
+  profiles: dev #开发环境
+  application:
+    name: springcloud-study-config-client
+
+eureka:
+  client:
+    service-url:
+      defaultZone: eureka7001.com:7001/eureka
 ---
+server: 
+  port: 8202
 spring:
-  profiles: test  #测试环境
-  port: 8081
-#   application:
-#     name: microservicecloud-config-atguigu-test
-#   请保存为UTF-8格式
+  profiles: test #开发环境
+  application:
+    name: springcloud-study-config-client
+
+eureka:
+  client:
+    service-url:
+      defaultZone: eureka7001.com:7001/eureka
+#请保存为UTF-8格式
