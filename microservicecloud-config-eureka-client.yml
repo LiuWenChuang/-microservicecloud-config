@@ -4,7 +4,7 @@ spring:
     - dev
 ---
 server: 
-  port: 8201
+  port: 7001
 spring:
   profiles: dev #开发环境
   application:
@@ -20,7 +20,7 @@ eureka:
       defaultZone: wanglihan7001.com:7001/eureka
 ---
 server: 
-  port: 8202
+  port: 7001
 spring:
   profiles: test #开发环境
   application:
